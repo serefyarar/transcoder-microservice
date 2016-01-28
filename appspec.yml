@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/transcoderapp
+hooks:
+  AfterInstall:
+    - location: scripts/1-install.sh
+      timeout: 300
+      runas: root     
+    - location: scripts/2-dependencies.sh
+      timeout: 300
+      runas: ubuntu   
+  ApplicationStart:
+    - location: scripts/3-start.sh
+      timeout: 300
+      runas: ubuntu

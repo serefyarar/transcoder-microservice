@@ -1,0 +1,14 @@
+{
+  "name": "transcoder",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.0.1",
+    "express": "^4.13.3",
+    "body-parser": "^1.14.1",
+    "aws-sdk" : "2.2.6",
+    "async" : "1.4.2"
+  }
+}
